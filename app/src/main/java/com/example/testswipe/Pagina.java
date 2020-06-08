@@ -1,24 +1,28 @@
 package com.example.testswipe;
 
 import android.app.AlertDialog;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
- * El fragmento representa cada página, con todo su contenido
+ * El fragmento representa cada pÃ¡gina, con todo su contenido
  */
 public class Pagina extends Fragment {
 	int posicion;
+	Drawable imagen;
 	
-	public Pagina(int i) {
-		posicion = i;
+	public Pagina(int posicion, Drawable imagen) {
+		this.posicion = posicion;
+		this.imagen = imagen;
 	}
 
 	@Override
@@ -26,25 +30,17 @@ public class Pagina extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		//Crea un contenedor dentro del cual incluye un TewxtView y un Button
+		//Crea un contenedor dentro del cual incluye un TextView y un ImageView
 		LinearLayout root = new LinearLayout(getActivity());
 		root.setOrientation(LinearLayout.VERTICAL);
 		
 		TextView tv = new TextView(getActivity());
-		tv.setText("Posicion: " + posicion);
+		tv.setText("PosiciÃ³n: " + posicion);
 		root.addView(tv);
 		
-		Button b = new Button(getActivity());
-		b.setText("Botón " + tv.getText());
-		//Permite al botón reaccionar al click
-		b.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				new AlertDialog.Builder(getActivity()).setMessage("Botón de la pagina " + posicion).show();
-			}
-			
-		});
-		root.addView(b);
+		ImageView iv = new ImageView(getActivity());
+		iv.setImageDrawable(imagen);
+		root.addView(iv);
 		
 		return root;
 	}
