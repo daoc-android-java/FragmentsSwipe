@@ -27,8 +27,7 @@ public class Pagina extends Fragment {
 
 	@Override
 	//Crea el contenido del fragmento (equivale a onCreate() en la actividad)
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,	Bundle savedInstanceState) {
 
 		//Crea un contenedor dentro del cual incluye un TextView y un ImageView
 		LinearLayout root = new LinearLayout(getActivity());

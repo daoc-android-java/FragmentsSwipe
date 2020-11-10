@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android-FragmentsSwipe.iml" filepath="$PROJECT_DIR$/.idea/modules/Android-FragmentsSwipe.iml" group="FragmentsSwipe" />
-      <module fileurl="file://$PROJECT_DIR$/FragmentsSwipe.iml" filepath="$PROJECT_DIR$/FragmentsSwipe.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FragmentsSwipe-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FragmentsSwipe-app.iml" group="FragmentsSwipe/app" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FragmentsSwipe.iml" filepath="$PROJECT_DIR$/.idea/modules/FragmentsSwipe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FragmentsSwipe.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FragmentsSwipe.app.iml" />
     </modules>
   </component>
 </project>
